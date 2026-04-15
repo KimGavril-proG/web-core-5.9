@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iintoo</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function agreeForm(form) {
+            const agreeCheckbox = form.agree;
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = !agreeCheckbox.checked;
+        }
+    </script>
+</head>
+
+<body>
+    <header class="box-model">
+        <!-- <figure> -->
+        <div class="bg">
+            <img class="bg" src="./../Git/Images/bg.jpg" alt="background image">
+        </div>
+        <div class="logo">
+            <img class="logo" src="./../Git/Images/logo.svg" alt="iintoo Logo">
+        </div>
+        <!-- </figure> -->
+    </header>
+    <div class="box-model">
+        <h1>Get iintoo it today</h1>
+        <p class="p">There is no charge or obligation upon registration.</p>
+        <br><br>
+        <!-- <a href="https://www.facebook.com/"><img src="./facebook.svg" alt="Facebook">Register with Facebook</a>  сделать ссылкой или кнопкой??? -->
+        <!-- <a href="https://www.linkedin.com/"><img src="./linkedin.svg" alt="LinkedIn">Register with LinkedIn</a>  сделать ссылкой или кнопкой??? -->
+        <div class="buttons">
+            <button class="button-facebook" type="submit"><img class="img-button" src="./../Git/Images/facebook.svg"
+                    alt="Facebook">Register with Facebook</button>
+            <button class="button-linkedin" type="submit"><img class="img-button" src="./../Git/Images/linkedin.svg"
+                    alt="LinkedIn">Register with LinkedIn</button>
+        </div>
+
+        <p class="line">or</p>
+        <!-- Поставить линии по бокам от слова  &#8212;&#8212;&#8212;&#8212;&#8212; "or"  &mdash;&mdash;&mdash;&mdash;&mdash; -->
+
+        <form action="#">
+            <div class="row">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" value="gus.goodwin@gmail.com"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                </div>
+            </div>
+            <h2>What type of investor are you?</h2>
+            <p class="p">Select the type of investor you are below.</p>
+            <p>
+            <div class="radios">
+                <p
+                    data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.">
+                    <label class="radio"><input type="radio" name="investorType" value="Individual"
+                            checked><span></span>Individual</label></p>
+                <p
+                    data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.">
+                    <label class="radio"><input type="radio" name="investorType"
+                            value="Business"><span></span>Business</label></p>
+                <p
+                    data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.">
+                    <label class="radio"><input type="radio" name="investorType" value="IRA"><span></span>IRA</label>
+                </p>
+                <p
+                    data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.">
+                    <label class="radio"><input type="radio" name="investorType"
+                            value="Trust"><span></span>Trust</label></p>
+                <!-- <p data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common."><label class="radio"><input type="radio" name="investorType" value="Individual" checked><span></span>Individual</label></p>
+                <p data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common."><label class="radio"><input type="radio" name="investorType" value="Business"><span></span>Business</label></p>
+                <p data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common."><label class="radio"><input type="radio" name="investorType" value="IRA"><span></span>IRA</label></p>
+                <p data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common."><label class="radio"><input type="radio" name="investorType" value="Trust"><span></span>Trust</label></p> -->
+                </p>
+            </div>
+            <!-- <div>I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div> -->
+
+            <p class="agree-checkbox">
+                <label for="checkbox"><input type="checkbox" name="agree" onclick="agreeForm(this.form)">I agree to the
+                    terms and receiving notifications from iintoo <a href="#">View full terms</a></label>
+            </p>
+             <p class="agree-checkbox-button"><button type="submit" disabled>Create Account</button></p>
+            
+    </div>
+    </form>
+
+
+</body>
+
+</html>
