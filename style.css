@@ -177,7 +177,7 @@ h2 {
     color: #000;
 }
 
-.radios label::after {
+.radios .tooltip::after {
     content: "ⓘ";
     color: #AFAFAF;
     font-size: 15px;
@@ -185,10 +185,10 @@ h2 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
-.radio span {
+.radio .circle {
     position: relative;
     display: inline-block;
     width: 20px;
@@ -199,12 +199,12 @@ h2 {
     /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); */
 }
 
-.radio input:checked + span {
+.radio input:checked + .circle {
     background-color: #3698FB;
     border-color: #3698FB;
 }
 
-.radio input:checked + span::before {
+.radio input:checked + .circle::before {
     content: "";
     position: absolute;
     top: 3.5px;
@@ -215,7 +215,7 @@ h2 {
     border-radius: 50%;
 }
 
-[data-title] {
+/* [data-title] {
     position: relative;
     cursor: help;
     cursor: pointer; 
@@ -240,7 +240,7 @@ h2 {
 [data-title]:hover::after {
     opacity: 1;
     top: 2em;
-}
+} */
 
 .agree-checkbox {
     margin-top: 110px;
@@ -279,12 +279,12 @@ h2 {
     }
 }
 
-/* [data-tooltip] {
+[data-tooltip] {
     position: relative;
     cursor: pointer;
 }
 
-[data-tooltip]::after {
+[data-tooltip]::before {
     content: attr(data-tooltip);
     position: absolute;
     width: 300px;
@@ -297,19 +297,13 @@ h2 {
     pointer-events: none;
     opacity: 0;
     transition: 1s;
-    /* bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-        
-    border-radius: 5px;
-    white-space: nowrap;
-} */
+} 
 
-/* [data-tooltip]:hover::after {
+[data-tooltip]:hover::before {
     opacity: 1;
     top: 2em;
-    /* visibility: visible; 
-} */
+    /* visibility: visible; */
+}
 
 
 
