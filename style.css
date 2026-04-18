@@ -8,6 +8,7 @@ body {
     margin: 80px 60px;
     color: #2A4A5C;
     font-size: 16px;
+    font-family: "Barlow", sans-serif;
 }
 
 /* h1, h2 {
@@ -28,6 +29,7 @@ div.box-model {
     float: left;
     width: 50%;
     min-height: 1200px;
+    max-height: 1200px;
     /* align-items: stretch; */
     /* border: 0 solid #fff; */
     box-sizing: border-box;
@@ -277,6 +279,12 @@ h2 {
     .radios {
         display: block;
     }
+     .box-model {
+        margin-bottom: 10px;
+    }
+    .agree-checkbox {
+    margin-top: 10px;
+    }
 }
 
 [data-tooltip] {
@@ -304,46 +312,3 @@ h2 {
     top: 2em;
     /* visibility: visible; */
 }
-
-
-
-/* #email:focus, #phone:focus {
-    outline: none;
-    border-left: 2px solid #0076B6;
-}
-
-#email::placeholder, #phone::placeholder {
-    transition: 0.5s;
-    color: #AFAFAF;
-}
-
-#email:focus::placeholder, #phone:focus::placeholder {
-    transform: translateY(-14px);
-    color: #AFAFAF;
-} */
-
-/* .row label {
-    transform: translateY(-1.5rem);
-    line-height: 1rem;
-    transition: 0.5s;
-    margin-bottom: 5px;
-}
-
-.row #email, .row #phone {
-    box-sizing: border-box;
-}
-
-.row #email:focus, .row #phone:focus {
-    outline: none;
-    border-left: 2px solid #0076B6;
-}
-
-.row #email:focus + label, .row #email:valid + label {
-    transform: translateY(-3.5rem);
-    font-size: 14px;
-}
-
-.row #phone:focus + label, .row #phone:valid + label {
-    transform: translateY(-3.5rem);
-    font-size: 14px;
-} */
