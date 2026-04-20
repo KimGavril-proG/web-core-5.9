@@ -1,6 +1,11 @@
 @font-face {
-    font-family: "Barlow";
-    src: local("Barlow"), url(./fonts/Barlow-Regular.ttf) format(ttf);
+    font-family: 'Barlow';
+    src: local('Barlow Regular'), local('Barlow-Regular'),
+        url('./../web-core-5.9/fonts/Barlow-Regular.woff2') format('woff2'),
+        url('./../web-core-5.9/fonts/Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -8,7 +13,7 @@ body {
     margin: 80px 60px;
     color: #2A4A5C;
     font-size: 16px;
-    font-family: "Barlow", sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 /* h1, h2 {
